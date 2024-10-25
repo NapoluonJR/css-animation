@@ -1,0 +1,49 @@
+/* Centrage du menu au milieu de la page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgray;
+}
+
+/* Style de base du menu */
+.menu {
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top;
+    border: 2px solid black;
+}
+
+/* Style des liens dans le menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;  
+}
+
+.menu a:hover {
+    background-color: blue;
+}
+
+.menu a:nth-child(n+2) {
+    display: none;
+}
+
+.menu:hover a:nth-child(n+2) {
+    display: block;
+}
+
+/* Animation de changement de hauteur au survol */
+.menu:hover {
+    height: 150px;
+}

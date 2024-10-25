@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgray;
+}
+
+/* Style pour le tube */
+.tube {
+    width: 60px;
+    height: 70%;
+    background-color: lightblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style pour la balle */
+.balle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: rebond 5s ease-out infinite;
+}
+
+/* Animation de la balle qui tombe et rebondit avant de s'arrêter */
+@keyframes rebond {
+    0% {
+        top: 0;
+    }
+    30% {
+        top: 80%;
+    }
+    50% {
+        top: 60%;
+    }
+    70% {
+        top: 80%;
+    }
+    80% {
+        top: 70%;
+    }
+    90% {
+        top: 80%;
+    }
+    95% {
+        top: 75%;
+    }
+    100% {
+        top: 80%;
+    }
+}
